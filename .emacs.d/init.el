@@ -10,7 +10,7 @@
 
 ;;;; Back-up files treatment
 ; They will all be saved on the same following folder:
-(setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
+(setq backup-directory-alist '(("." . "~/.emacs.backup/"))
   backup-by-copying t   ; Don't delink hardlinks
   version-control t     ; Use version numbers on backups
   delete-old-version t  ; Automatically delete excess backups

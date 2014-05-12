@@ -118,7 +118,11 @@ fi
 # setting my prompt format
 PS1='\h:\W \u\$ '
 
-# set PATH so it includes user's private bin if it exists
+# set PATH so it includes user's private bin and google_appengine folder
+# if they exist
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
+    if [ -d "$HOME/bin/google_appengine/" ] ; then
+	PATH="$HOME/bin/google_appengine/":"$PATH"
+    fi
 fi
